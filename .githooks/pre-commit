@@ -1,0 +1,3 @@
+#!/bin/sh
+node scripts/verify_repository_privacy.mjs || exit 1
+exec node scripts/verify_staged_version.mjs

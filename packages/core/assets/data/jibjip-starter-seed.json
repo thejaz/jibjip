@@ -1,0 +1,757 @@
+{
+  "version": 2,
+  "generatedAt": "2026-07-23T00:00:00.000Z",
+  "source": {
+    "filename": "jibjip-starter-seed.json",
+    "kind": "jibjip-starter"
+  },
+  "settings": {
+    "clarity": {
+      "enabled": true,
+      "awards": []
+    },
+    "dataVersion": 2,
+    "setupVersion": 0,
+    "setupState": "uninitialized",
+    "mainWalletId": null,
+    "setupStep": 1,
+    "setupDraft": null,
+    "reportingCurrency": "EUR",
+    "locale": "en",
+    "showJalali": true,
+    "starterSeedVersion": 2,
+    "irrDisplayUnit": "IRR",
+    "textSize": "medium",
+    "motion": "subtle",
+    "startPage": "overview",
+    "overviewWalletIds": null,
+    "overviewPinnedWalletIds": [
+      null,
+      null,
+      null
+    ],
+    "overviewHiddenCurrencies": [],
+    "chartExcludedCategoryIds": [],
+    "defaultWalletId": null
+  },
+  "currencies": [
+    {
+      "code": "USD",
+      "name": "US dollar",
+      "symbol": "$",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "GBP",
+      "name": "British pound",
+      "symbol": "£",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "CHF",
+      "name": "Swiss franc",
+      "symbol": "CHF",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "CAD",
+      "name": "Canadian dollar",
+      "symbol": "CA$",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "AUD",
+      "name": "Australian dollar",
+      "symbol": "A$",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "JPY",
+      "name": "Japanese yen",
+      "symbol": "¥",
+      "kind": "fiat",
+      "fractionDigits": 0,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "CNY",
+      "name": "Chinese yuan",
+      "symbol": "¥",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "INR",
+      "name": "Indian rupee",
+      "symbol": "₹",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "CZK",
+      "name": "Czech koruna",
+      "symbol": "Kč",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "SEK",
+      "name": "Swedish krona",
+      "symbol": "kr",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "NOK",
+      "name": "Norwegian krone",
+      "symbol": "kr",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "DKK",
+      "name": "Danish krone",
+      "symbol": "kr",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "PLN",
+      "name": "Polish zloty",
+      "symbol": "zł",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "HUF",
+      "name": "Hungarian forint",
+      "symbol": "Ft",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "RON",
+      "name": "Romanian leu",
+      "symbol": "lei",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "ISK",
+      "name": "Icelandic krona",
+      "symbol": "kr",
+      "kind": "fiat",
+      "fractionDigits": 0,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "UAH",
+      "name": "Ukrainian hryvnia",
+      "symbol": "₴",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "RSD",
+      "name": "Serbian dinar",
+      "symbol": "din",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "RUB",
+      "name": "Russian ruble",
+      "symbol": "₽",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "TRY",
+      "name": "Turkish lira",
+      "symbol": "₺",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "AED",
+      "name": "UAE dirham",
+      "symbol": "د.إ",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "SAR",
+      "name": "Saudi riyal",
+      "symbol": "ر.س",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "IRR",
+      "name": "Iranian rial",
+      "symbol": "﷼",
+      "kind": "fiat",
+      "fractionDigits": 0,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "AFN",
+      "name": "Afghan afghani",
+      "symbol": "؋",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "AMD",
+      "name": "Armenian dram",
+      "symbol": "֏",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "AZN",
+      "name": "Azerbaijani manat",
+      "symbol": "₼",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "IQD",
+      "name": "Iraqi dinar",
+      "symbol": "ع.د",
+      "kind": "fiat",
+      "fractionDigits": 3,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "PKR",
+      "name": "Pakistani rupee",
+      "symbol": "₨",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "TMT",
+      "name": "Turkmenistan manat",
+      "symbol": "m",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "BRL",
+      "name": "Brazilian real",
+      "symbol": "R$",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "EGP",
+      "name": "Egyptian pound",
+      "symbol": "E£",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "ETB",
+      "name": "Ethiopian birr",
+      "symbol": "Br",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "IDR",
+      "name": "Indonesian rupiah",
+      "symbol": "Rp",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "ZAR",
+      "name": "South African rand",
+      "symbol": "R",
+      "kind": "fiat",
+      "fractionDigits": 2,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "BTC",
+      "name": "Bitcoin",
+      "symbol": "₿",
+      "kind": "crypto",
+      "fractionDigits": 8,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "ETH",
+      "name": "Ethereum",
+      "symbol": "Ξ",
+      "kind": "crypto",
+      "fractionDigits": 8,
+      "builtIn": true,
+      "archived": false
+    },
+    {
+      "code": "USDT",
+      "name": "Tether",
+      "symbol": "₮",
+      "kind": "crypto",
+      "fractionDigits": 6,
+      "builtIn": true,
+      "archived": false
+    }
+  ],
+  "wallets": [],
+  "categories": [],
+  "rates": [
+    {
+      "id": "rate-baseline-usd",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "USD",
+      "value": "1.14",
+      "effectiveDate": "2026-07-15",
+      "source": "Personal baseline; original source: Google",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-gbp",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "GBP",
+      "value": "0.85082",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-chf",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "CHF",
+      "value": "0.9223",
+      "effectiveDate": "2026-07-10",
+      "source": "European Central Bank; personal baseline",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-cad",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "CAD",
+      "value": "1.6073",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-aud",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "AUD",
+      "value": "1.641",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-jpy",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "JPY",
+      "value": "186.07",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-cny",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "CNY",
+      "value": "7.7582",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-inr",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "INR",
+      "value": "110.3",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-czk",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "CZK",
+      "value": "24.19",
+      "effectiveDate": "2026-07-10",
+      "source": "Personal database manual rate; approved current Full backup",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-sek",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "SEK",
+      "value": "11.0499",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-nok",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "NOK",
+      "value": "11.073",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-dkk",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "DKK",
+      "value": "7.4833",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-pln",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "PLN",
+      "value": "4.3443",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-huf",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "HUF",
+      "value": "362.71",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-ron",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "RON",
+      "value": "5.2456",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-isk",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "ISK",
+      "value": "143.43",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-uah",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "UAH",
+      "value": "51.132",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-rsd",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "RSD",
+      "value": "117.46",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-rub",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "RUB",
+      "value": "89.47",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-try",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "TRY",
+      "value": "53.7039",
+      "effectiveDate": "2026-07-10",
+      "source": "European Central Bank; personal baseline",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-aed",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "AED",
+      "value": "4.2073",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-sar",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "SAR",
+      "value": "4.2961",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-irr",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "IRR",
+      "value": "2102000",
+      "effectiveDate": "2026-07-15",
+      "source": "TGJU Iranian open market; personal baseline",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-afn",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "AFN",
+      "value": "75.531",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-amd",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "AMD",
+      "value": "419.54",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-azn",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "AZN",
+      "value": "1.947",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-iqd",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "IQD",
+      "value": "1500.57",
+      "effectiveDate": "2026-07-18",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-pkr",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "PKR",
+      "value": "319.36",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-tmt",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "TMT",
+      "value": "4.0097",
+      "effectiveDate": "2026-07-19",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-brl",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "BRL",
+      "value": "5.8007",
+      "effectiveDate": "2026-07-23",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-egp",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "EGP",
+      "value": "58.487",
+      "effectiveDate": "2026-07-23",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-etb",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "ETB",
+      "value": "183.02",
+      "effectiveDate": "2026-07-22",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-idr",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "IDR",
+      "value": "20453",
+      "effectiveDate": "2026-07-23",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-zar",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "ZAR",
+      "value": "18.7743",
+      "effectiveDate": "2026-07-23",
+      "source": "Frankfurter multi-provider reference",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-btc",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "BTC",
+      "value": "0.0000177204423022398639",
+      "effectiveDate": "2026-07-19",
+      "source": "CoinGecko market price",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-eth",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "ETH",
+      "value": "0.000611127407841986897",
+      "effectiveDate": "2026-07-19",
+      "source": "CoinGecko market price",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "rate-baseline-usdt",
+      "baseCurrency": "EUR",
+      "quoteCurrency": "USDT",
+      "value": "1.14462575316374558",
+      "effectiveDate": "2026-07-19",
+      "source": "CoinGecko market price",
+      "method": "reference",
+      "createdAt": "2026-07-23T00:00:00.000Z"
+    }
+  ],
+  "transactions": [],
+  "uncharted": []
+}

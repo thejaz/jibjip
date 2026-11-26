@@ -1,0 +1,83 @@
+{
+  "name": "jibjip",
+  "version": "0.14.0",
+  "private": true,
+  "description": "A local-first personal-finance app in English and Persian: wallets, transfers, exchange, split payments, reports, backups, and offline use.",
+  "homepage": "https://jibjip.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thejaz/jibjip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thejaz/jibjip/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vite --host localhost --port 3000 --strictPort",
+    "build": "npm run build:public",
+    "build:personal": "npm run build:core && vite build --mode personal",
+    "build:public": "npm run build:core && vite build --mode public",
+    "verify:brand": "node scripts/verify_brand_assets.mjs",
+    "verify:public": "node scripts/verify_public_release.mjs",
+    "start": "python scripts/serve_app.py",
+    "test": "npm run build && node --test tests/rendered-html.test.mjs tests/core-package.test.mjs tests/public-release.test.mjs tests/setup-layout.test.mjs tests/starter-seed.test.mjs tests/app-version.test.mjs tests/release.test.mjs && npm run test:exchange && npm run test:portability && npm run test:release-cache && npm run test:catalogs && npm run test:rates && npm run test:setup && npm run test:wallets && npm run test:splits && npm run test:robustness && npm run test:charts && npm run test:offline && npm run test:i18n && npm run test:privacy",
+    "test:charts": "node --experimental-strip-types --test tests/charts.test.ts tests/chart-visuals.test.ts",
+    "test:splits": "node --experimental-strip-types --test tests/splits.test.ts",
+    "test:robustness": "node --experimental-strip-types --test tests/app-robustness.test.ts tests/local-day.test.ts tests/performance.test.ts tests/colors.test.ts tests/clarity.test.ts tests/runtime.test.ts tests/logo-sound.test.ts",
+    "test:exchange": "node --experimental-strip-types --test tests/exchange-logic.test.ts",
+    "test:portability": "node --experimental-strip-types --test tests/portability.test.ts tests/migration-guide.test.ts",
+    "test:release-cache": "node --experimental-strip-types --test tests/release-cache.test.ts",
+    "test:catalogs": "node --experimental-strip-types --test tests/catalogs.test.ts",
+    "test:rates": "node --experimental-strip-types --test tests/rates.test.ts tests/rate-history.test.ts tests/irr-fallbacks.test.ts",
+    "test:setup": "node --experimental-strip-types --test tests/setup.test.ts",
+    "test:wallets": "node --experimental-strip-types --test tests/wallet-lifecycle.test.ts tests/wallet-selection.test.ts",
+    "generate:starter": "node --experimental-strip-types scripts/generate_starter_seed.mjs",
+    "test:public-release": "node --test tests/public-release.test.mjs",
+    "test:app-version": "node --test tests/app-version.test.mjs",
+    "version:patch": "node scripts/bump_app_version.mjs patch",
+    "version:minor": "node scripts/bump_app_version.mjs minor",
+    "version:major": "node scripts/bump_app_version.mjs major",
+    "verify:version": "node scripts/verify_staged_version.mjs",
+    "test:starter-seed": "node --test tests/starter-seed.test.mjs",
+    "lint": "eslint .",
+    "check": "npm run lint && npm run typecheck && npm test && npm run verify:docs && npm run verify:public && npm run verify:package && npm run verify:brand && npm run verify:privacy",
+    "release": "node scripts/release.mjs",
+    "test:offline": "node --experimental-strip-types --test tests/offline-worker.test.ts tests/offline-lifecycle.test.ts",
+    "test:i18n": "node --experimental-strip-types --test tests/i18n.test.ts",
+    "test:privacy": "node --test tests/repository-privacy.test.mjs tests/website-analytics.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "benchmark": "node --experimental-strip-types scripts/benchmark_app.mjs",
+    "build:core": "vite build --config packages/core/vite.config.ts && tsc -p packages/core/tsconfig.build.json && node scripts/prepare_core_package.mjs",
+    "test:source": "python -B -m unittest discover -s tests -p \"*_test.py\"",
+    "test:package": "node --test tests/core-package.test.mjs",
+    "verify:docs": "python -B scripts/check_documentation.py",
+    "benchmark:clarity": "node --experimental-strip-types scripts/benchmark_clarity.mjs",
+    "verify:package": "node scripts/verify_core_package.mjs",
+    "verify:privacy": "node scripts/verify_repository_privacy.mjs --ref HEAD"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "eslint": "9.39.4",
+    "typescript": "5.9.3",
+    "vite": "8.0.13",
+    "@eslint/js": "9.39.4",
+    "typescript-eslint": "8.59.3",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "7.1.1"
+  },
+  "type": "module",
+  "author": {
+    "name": "THEJAZ",
+    "url": "https://github.com/thejaz"
+  },
+  "workspaces": [
+    "packages/core",
+    "apps/web"
+  ]
+}

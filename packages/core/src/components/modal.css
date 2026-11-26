@@ -1,0 +1,2 @@
+/* Native open state also covers nested dialogs and out-of-order unmounts. */
+body:has(dialog[open]) { overflow: hidden; }

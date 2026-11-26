@@ -1,0 +1,2 @@
+#!/bin/sh
+exec node scripts/verify_repository_privacy.mjs --push

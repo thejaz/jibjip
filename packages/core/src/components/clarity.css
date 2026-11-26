@@ -1,0 +1,105 @@
+.clarity-summary { display: flex; align-items: center; gap: 14px; padding: 14px 18px; border: 1px solid var(--line); border-radius: var(--radius-md); background: linear-gradient(110deg, color-mix(in srgb, var(--accent-soft) 55%, var(--surface)), var(--surface) 68%); }
+html[dir="rtl"] .clarity-summary { background: linear-gradient(250deg, color-mix(in srgb, var(--accent-soft) 55%, var(--surface)), var(--surface) 68%); }
+.clarity-summary.is-complete { border-color: color-mix(in srgb, var(--green) 25%, var(--line)); }
+.clarity-ring { flex: 0 0 48px; width: 48px; height: 48px; fill: none; stroke-width: 3; }
+.clarity-ring-track { stroke: var(--line); }
+.clarity-ring-value { stroke: var(--accent); stroke-linecap: round; }
+.clarity-ring-check { stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.clarity-ring text { fill: var(--ink); stroke: none; font: 600 12px var(--font-value); }
+.clarity-summary.is-complete .clarity-ring-value, .clarity-summary.is-complete .clarity-ring-check { stroke: var(--green); }
+.clarity-summary-copy { display: grid; gap: 3px; min-width: 0; flex: 1; }
+.clarity-summary-copy strong { font-size: var(--text-body); }
+.clarity-summary-copy span, .clarity-summary-copy small, .clarity-note, .clarity-period { color: var(--muted); font-size: var(--text-small); }
+.clarity-summary-copy small { font-size: var(--text-caption); }
+.clarity-summary .button { flex-shrink: 0; }
+.clarity-setting { display: inline-flex; align-items: center; gap: 10px; max-width: 100%; min-height: 44px; cursor: pointer; }
+.clarity-toggle-input { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; clip: rect(0, 0, 0, 0); clip-path: inset(50%); white-space: nowrap; }
+.clarity-setting > span:last-child { min-width: 0; overflow-wrap: anywhere; }
+.clarity-switch { position: relative; flex: 0 0 44px; width: 44px; height: 26px; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--paper); }
+.clarity-switch::after { content: ""; position: absolute; inset-block-start: 3px; inset-inline-start: 3px; width: 18px; height: 18px; border-radius: 50%; background: var(--muted); }
+.clarity-setting input:checked + .clarity-switch { border-color: var(--accent); background: var(--accent); }
+.clarity-setting input:checked + .clarity-switch::after { transform: translateX(18px); background: var(--surface-strong); }
+html[dir="rtl"] .clarity-setting input:checked + .clarity-switch::after { transform: translateX(-18px); }
+.clarity-setting input:focus-visible + .clarity-switch { outline: 2px solid var(--accent); outline-offset: 3px; }
+.clarity-setting:has(input[aria-disabled="true"]) { cursor: wait; opacity: .65; }
+.clarity-settings .clarity-note { max-width: 72ch; margin-block-start: 8px; }
+@media (prefers-reduced-motion: no-preference) {
+  .clarity-switch { transition: background-color 160ms ease, border-color 160ms ease; }
+  .clarity-switch::after { transition: transform 160ms ease; }
+  .clarity-ring-value { transition: stroke-dasharray 320ms ease, stroke 240ms ease; }
+  .clarity-tasks button { transition: background-color 160ms ease, border-color 160ms ease; }
+  .clarity-completed-icon { animation: clarity-settle 220ms ease-out; }
+  @keyframes clarity-settle { from { opacity: .3; transform: scale(.92); } to { opacity: 1; transform: scale(1); } }
+}
+@media (forced-colors: active) {
+  .clarity-setting input { position: static; width: 22px; height: 22px; margin: 0; clip: auto; clip-path: none; overflow: visible; }
+  .clarity-switch { display: none; }
+}
+.clarity-note { margin-block: 12px 0; line-height: 1.7; }
+.clarity-dialog .dialog-content { display: grid; gap: 16px; padding: 20px 24px 24px; }
+.clarity-dialog .icon-button { width: 44px; height: 44px; }
+.clarity-dialog .button { min-height: 44px; }
+.clarity-dialog .text-button { min-height: 44px; }
+.clarity-tasks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+.clarity-tasks button { display: flex; align-items: center; justify-content: flex-start; gap: 9px; min-width: 0; min-height: 64px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); padding: 10px; text-align: start; font: inherit; font-size: var(--text-small); color: var(--ink); cursor: pointer; }
+.clarity-tasks button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--accent-strong); }
+.clarity-tasks button > span:last-child { min-width: 0; overflow-wrap: anywhere; }
+.clarity-tasks small { display: block; margin-block-start: 3px; color: var(--muted); font-size: var(--text-caption); }
+.clarity-task-icon { display: grid; place-items: center; flex: 0 0 28px; width: 28px; height: 28px; border-radius: 50%; color: var(--muted); background: var(--paper); }
+.clarity-tasks button[data-completed="true"] .clarity-task-icon { color: var(--green); background: var(--green-soft); }
+.clarity-tasks button svg { flex-shrink: 0; }
+.clarity-instruction, .clarity-period { margin: 0; }
+.clarity-period { display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.clarity-period bdi { font-family: var(--font-value); }
+.clarity-list-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px 12px; font-size: var(--text-small); color: var(--muted); }
+.clarity-list-heading .text-button { display: inline-flex; align-items: center; gap: 6px; }
+.clarity-activities { list-style: none; padding: 0; margin: 0; border-block: 1px solid var(--line); }
+.clarity-activities li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 44px; align-items: center; gap: 10px; padding-block: 10px; }
+.clarity-activities li + li { border-block-start: 1px solid var(--line); }
+.clarity-activities li > div { min-width: 0; }
+.clarity-activities strong, .clarity-activities small { display: block; overflow-wrap: anywhere; }
+.clarity-activities strong { font-size: var(--text-small); }
+.clarity-activities small { color: var(--muted); font-size: var(--text-small); margin-block-start: 4px; }
+.clarity-category-list, .clarity-category-list > span { display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; max-width: 100%; }
+.clarity-category-list .category-visual { flex-shrink: 0; width: 24px; height: 24px; }
+.clarity-amounts { display: grid; gap: 4px; text-align: end; font-family: var(--font-value); font-size: var(--text-body); font-weight: 600; }
+.clarity-wallet { display: grid; gap: 16px; }
+.clarity-wallet label { display: grid; gap: 8px; }
+.clarity-wallet select { min-width: 0; width: 100%; height: 42px; padding-block: 0; padding-inline-start: 12px; border: 1px solid var(--line-strong); border-radius: 9px; background-color: var(--surface-strong); color: var(--ink); font-family: var(--font-ui); font-size: var(--text-input); }
+.clarity-wallet > strong { min-width: 0; font-family: var(--font-value); font-size: max(20px, calc(24px * var(--font-scale))); }
+.clarity-wallet .text-button { justify-self: start; }
+.clarity-confirm { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; min-height: 44px; padding-block: 10px; }
+.clarity-confirm input { flex: 0 0 20px; width: 20px; height: 20px; margin-block-start: 2px; accent-color: var(--accent); }
+.clarity-completed { display: grid; justify-items: center; gap: 12px; padding: 24px 16px; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--paper); text-align: center; }
+.clarity-completed-icon { display: grid; place-items: center; width: 60px; height: 60px; border-radius: 50%; color: var(--green); background: var(--green-soft); }
+.clarity-completed h3 { margin: 0; font-size: max(18px, calc(20px * var(--font-scale))); }
+.clarity-completed [role="status"] { display: grid; justify-items: center; gap: 10px; }
+.clarity-completed p { margin: 0; max-width: 42ch; color: var(--muted); }
+.clarity-completed small { color: var(--green); font-size: var(--text-small); font-family: var(--font-value); }
+.clarity-show-records { justify-self: start; }
+.clarity-empty { margin: 0; padding: 18px; border-radius: var(--radius-sm); background: var(--paper); color: var(--muted); }
+.clarity-refresh { margin: 0; padding: 12px; border-radius: var(--radius-sm); background: var(--accent-soft); color: var(--accent-strong); }
+.clarity-refresh .text-button { min-height: 44px; }
+.clarity-pagination, .clarity-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
+.clarity-pagination span { font-family: var(--font-value); font-size: var(--text-small); }
+html[dir="rtl"] .clarity-pagination svg { transform: rotate(180deg); }
+html[dir="rtl"] .clarity-continue svg { transform: rotate(180deg); }
+.clarity-help { color: var(--muted); font-size: var(--text-small); }
+.clarity-help summary { display: list-item; min-height: 44px; padding-block: 12px; cursor: pointer; }
+.clarity-dialog .clarity-note { margin: 0; }
+.clarity-dialog .dialog-content > .clarity-actions { border-block-start: 1px solid var(--line); padding: 16px 0 0; }
+.clarity-dialog .dialog-content > .dialog-form-error { margin: 0; }
+@media (max-width: 620px) {
+  .clarity-dialog .dialog-content { padding: 16px; padding-block-end: max(16px, env(safe-area-inset-bottom)); }
+}
+@media (max-width: 440px) {
+  .clarity-summary { padding: 12px; gap: 8px; flex-wrap: wrap; }
+  .clarity-summary-copy { flex-basis: 160px; }
+  .clarity-summary .button { margin-inline-start: auto; }
+  .clarity-tasks button { flex-direction: column; align-items: center; gap: 6px; padding: 10px 6px; text-align: center; }
+  .clarity-activities li { grid-template-columns: minmax(0, 1fr) 44px; }
+  .clarity-activities li > div:first-child { grid-column: 1; }
+  .clarity-activities .clarity-amounts { grid-column: 1; text-align: start; }
+  .clarity-activities .icon-button { grid-column: 2; grid-row: 1 / span 2; }
+  .clarity-actions { flex-wrap: wrap; }
+}

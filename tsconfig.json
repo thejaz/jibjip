@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "checkJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@jibjip/core": [
+        "./packages/core/src/index.ts"
+      ]
+    }
+  },
+  "include": [
+    "packages/core/src",
+    "apps/web",
+    "tests",
+    "vite.config.ts",
+    "packages/core/vite.config.ts",
+    "vite-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "work",
+    "packages/core/dist"
+  ]
+}

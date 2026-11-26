@@ -1,0 +1,107 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+node_modules/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+/playwright-report/
+/test-results/
+
+# Retired generated output
+/.next/
+/.vinext/
+/out/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+next-env.d.ts
+*.tsbuildinfo
+/dist/
+/.wrangler/
+/outputs/
+/work/
+.agents/
+
+# local caches and temporary output
+__pycache__/
+*.py[cod]
+/.cache/
+/.turbo/
+/.npm/
+/.pnpm-store/
+/tmp/
+/temp/
+*.log
+*.tmp
+*.temp
+*~
+
+# Local financial data. Never commit real workbooks or generated seed data.
+/[Cc][Hh][Aa][Nn][Gg][Ee][Ll][Oo][Gg].[Mm][Dd]
+*.xlsx
+*.xls
+/*.txt
+/packages/core/assets/data/*.json
+!/packages/core/assets/data/jibjip-starter-seed.json
+/Mwatch/
+/exports/
+*.csv
+*.tsv
+*.sqlite
+*.sqlite3
+*.db
+*.ldb
+*.indexeddb.leveldb/
+*.indexeddb.blob/
+**/jibjip-backup*.json
+**/mwatch-backup*.json
+**/*.local.md
+
+# Owner-only operations. These files live beside the public source but are
+# never committed: deployment, workstation notes, private tools, and handoffs.
+/docs/local/
+/deploy/
+/collaboration/
+/Back Up JIBJIP.cmd
+/Clean Developer Workspace.cmd
+/Connect Developer Tools.cmd
+/scripts/create_hosted_release.ps1
+/scripts/deploy_hosted_release.ps1
+/scripts/create_project_backup.py
+/scripts/clean_local_workspace.ps1
+/tests/release-workflow.test.mjs
+/tests/cleanup_test.py
+/tests/project_backup_test.py
+
+# Local development process output
+.dev-output.log
+.dev-error.log
+
+# Workspace build output
+/packages/core/dist/
+/packages/core/LICENSE
+/apps/web/dist/
